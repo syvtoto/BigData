@@ -1,4 +1,8 @@
 # Using official ubuntu image as a parent image
 FROM ubuntu:latest
 
-MAINTAINER Flamant Thomas
+# Setting the working directory to /app
+WORKDIR /workspace
+
+# Getting the updates for Ubuntu and installing python into our environment
+RUN apt-get -y update  && apt-get install -y python3 && apt-get install -y python3-pip && apt-get install -y vim && apt-get install -y git

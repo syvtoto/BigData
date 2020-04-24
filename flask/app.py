@@ -3,7 +3,7 @@ from flask import Flask
 import pandas as pd
 app = Flask(__name__)
 
-data = pd.read_json('books.json')
+data = pd.read_json('reduce.json')
 print(data.head())
 
 @app.route('/')

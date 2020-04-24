@@ -13,4 +13,4 @@ RUN pip3 install -r requirements.txt
 EXPOSE 5000
 
 CMD export FLASK_APP=app.py \
-&& flask run --host=0.0.0.0
+&& flask run --host=0.0.0.0 &
